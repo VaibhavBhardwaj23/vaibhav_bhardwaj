@@ -17,8 +17,8 @@ const Projects = ({ title, image, technology, link }) => {
       <span className="tech_used">Technology Used</span>
       <div className="tech_div">
         {technology &&
-          technology.map((tech) => {
-            return <span>{tech}</span>;
+          technology.map((tech, i) => {
+            return <span key={i}>{tech}</span>;
           })}
       </div>
       <a href={link} target="blank">

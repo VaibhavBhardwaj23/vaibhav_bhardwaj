@@ -4,6 +4,10 @@ import ThemeContext from "../context/Context";
 
 const Header = () => {
   const { darkTheme, setDarkTheme } = useContext(ThemeContext);
+
+  const setThemeLocal = () => {
+    localStorage.setItem("Theme", JSON.stringify(!darkTheme));
+  };
   return (
     <div className="header">
       <h1 className="logo_title">Vaibhav Bhardwaj .</h1>
@@ -15,7 +19,10 @@ const Header = () => {
       </div>
 
       <div
-        onClick={() => setDarkTheme((prevState) => !prevState)}
+        onClick={() => {
+          setDarkTheme((prevState) => !prevState);
+          setThemeLocal();
+        }}
         className="theme_switch"
       >
         {!darkTheme ? (

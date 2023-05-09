@@ -11,11 +11,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
-  const { darkTheme } = useContext(ThemeContext);
+  const { darkTheme, setDarkTheme } = useContext(ThemeContext);
   // console.log(darkTheme);
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
+    const checkLocalStorage = () => {
+      if (localStorage.getItem("Theme")) {
+        const themeFound = JSON.parse(localStorage.getItem("Theme"));
+        setDarkTheme(themeFound);
+      } else {
+        console.log("No");
+      }
+    };
+    return checkLocalStorage;
   }, []);
 
   return (
@@ -53,28 +62,28 @@ function App() {
           link="https://forecast-and-weather-app.netlify.app/"
         />
         <Projects
-          key={1}
+          key={2}
           title="Weather App"
           image="./images/weather.jpg"
           technology={["HTML", "CSS", "ReactJS", "API"]}
           link="https://forecast-and-weather-app.netlify.app/"
         />
         <Projects
-          key={1}
+          key={3}
           title="Weather App"
           image="./images/weather.jpg"
           technology={["HTML", "CSS", "ReactJS", "API"]}
           link="https://forecast-and-weather-app.netlify.app/"
         />
         <Projects
-          key={1}
+          key={4}
           title="Weather App"
           image="./images/weather.jpg"
           technology={["HTML", "CSS", "ReactJS", "API"]}
           link="https://forecast-and-weather-app.netlify.app/"
         />
         <Projects
-          key={1}
+          key={5}
           title="Weather App"
           image="./images/weather.jpg"
           technology={["HTML", "CSS", "ReactJS", "API"]}
@@ -98,12 +107,12 @@ function App() {
             link="https://www.instagram.com/iamvaibhavbhardwaj/"
           />
           <Socials
-            key={1}
+            key={2}
             image="./images/linkedin_"
             link="https://www.linkedin.com/in/vaibhav-bhardwaj-b9aa48120/"
           />
           <Socials
-            key={1}
+            key={3}
             image="./images/github_"
             link="https://github.com/VaibhavBhardwaj23"
           />
