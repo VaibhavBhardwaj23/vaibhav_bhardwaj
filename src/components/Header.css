@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu_options {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo_title {
+  font-family: "Morganite", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.theme_switch {
+  cursor: pointer;
+  font-size: 10px;
+  display: flex;
+}
+.theme_switch img {
+  width: 17px;
+  height: 17px;
+}
+.options {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .menu_options {
+    flex-direction: row;
+    font-size: 16px;
+  }
+  .options {
+    margin: 10px;
+  }
+  .logo_title {
+    font-size: 36px;
+  }
+  .theme_switch {
+    align-items: center;
+    font-size: 16px;
+  }
+  .theme_switch img {
+    width: 36px;
+    height: 36px;
+  }
+}

@@ -1,0 +1,10 @@
+a img {
+  width: 39px;
+  height: 39px;
+}
+.icons {
+  margin: 2vw;
+  outline: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+}

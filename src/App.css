@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+.dark_theme {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  transition: 0.5s ease-in-out all;
+}
+.light_theme {
+  padding: 1em;
+  background-color: white;
+  color: black;
+  transition: 0.5s ease-in-out all;
+}
+/* marquee div container */
+.marquee {
+  margin: 1em auto;
+  display: flex;
+  justify-content: flex-start;
+  height: 30px;
+  overflow: hidden;
+}
+.marquee span {
+  font-size: 24px;
+
+  white-space: nowrap;
+  margin: 0 20px;
+
+  animation: marquee 6000ms linear infinite;
+}
+.skills_container {
+  width: max-content;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* keyframe */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.skills_container {
+  width: 50%;
+  margin: 0 auto;
+}
+.projects_container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.descript {
+  margin: 20px auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+hr {
+  margin: 10% auto 0;
+  width: 100%;
+  /* border: 1px solid; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.social {
+  text-align: center;
+}
+.social span {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 2;
+}
+.socials {
+  margin: 2vw;
+  /* outline: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+  .marquee {
+    height: 118px;
   }
-  to {
-    transform: rotate(360deg);
+  .marquee span {
+    font-size: 96px;
+  }
+  .skills_container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    flex-wrap: wrap;
+  }
+  .projects_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .descript {
+    max-width: 90%;
+    font-size: 42px;
+  }
+  hr {
+    margin: 5% auto 0;
+  }
+  .socials {
+    max-width: 60%;
+    margin: 2vw auto;
   }
 }

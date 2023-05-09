@@ -1,0 +1,33 @@
+.mail_button {
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  width: max-content;
+  margin: 4% auto;
+  color: black;
+  font-size: 14px;
+  padding: 0.1em 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.mail_button img {
+  width: 35px;
+  height: 35px;
+  scale: 0.3;
+  transform: rotate(-45deg);
+}
+.mail_button:hover img {
+  scale: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .mail_button {
+    margin: 4% auto;
+    font-size: 20px;
+    padding: 0.2em 0.5em;
+  }
+}

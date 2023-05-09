@@ -1,0 +1,26 @@
+.home_page {
+  display: flex;
+  flex-direction: column;
+}
+.hero_text {
+  font-size: 64px;
+}
+.subHero_text {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 508px) {
+  .home_page {
+    flex-direction: row;
+    align-items: last baseline;
+    justify-content: space-between;
+  }
+  .hero_text {
+    line-height: 1.3;
+    font-size: 17vw;
+  }
+  .subHero_text {
+    font-size: 2.2vw;
+  }
+}

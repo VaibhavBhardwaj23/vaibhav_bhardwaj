@@ -1,0 +1,17 @@
+.skills_img img {
+  width: 150px;
+  height: 150px;
+}
+.skills_img {
+  padding: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .skills_img img {
+    width: 250px;
+    height: 250px;
+  }
+  .skills_img {
+    margin: 0 100px;
+  }
+}
