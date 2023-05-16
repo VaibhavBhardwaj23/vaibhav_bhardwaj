@@ -63,24 +63,24 @@ function App() {
         />
         <Projects
           key={2}
-          title="Weather App"
-          image="./images/weather.jpg"
-          technology={["HTML", "CSS", "ReactJS", "API"]}
-          link="https://forecast-and-weather-app.netlify.app/"
+          title="Cinebase"
+          image="./images/cinebase.jpg"
+          technology={["HTML", "CSS", "ReactJS", "API", "TailWindCss"]}
+          link="https://cinebase1.netlify.app/"
         />
         <Projects
           key={3}
-          title="Weather App"
-          image="./images/weather.jpg"
-          technology={["HTML", "CSS", "ReactJS", "API"]}
-          link="https://forecast-and-weather-app.netlify.app/"
+          title="To Do App- TaskIt"
+          image="./images/taskit.jpg"
+          technology={["HTML", "CSS", "ReactJS"]}
+          link="https://task1t.netlify.app/"
         />
         <Projects
           key={4}
           title="Weather App"
           image="./images/weather.jpg"
           technology={["HTML", "CSS", "ReactJS", "API"]}
-          link="https://forecast-and-weather-app.netlify.app/"
+          link="https://task1t.netlify.app/"
         />
         <Projects
           key={5}
